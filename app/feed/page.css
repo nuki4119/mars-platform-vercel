@@ -1,0 +1,15 @@
+.my-masonry-grid {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 100%;
+  width: 100%;
+  justify-content: center;
+  gap: 1.5rem; /* Tailwind gap-6 */
+}
+
+.my-masonry-grid_column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}

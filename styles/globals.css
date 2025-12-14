@@ -1,0 +1,11 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0f172a; /* slate-950 */
+  color: #f8fafc; /* Tailwind zinc-50 */
+  font-family: 'Inter', sans-serif;
+}
+
