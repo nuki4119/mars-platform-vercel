@@ -4,7 +4,8 @@ import UniversalPageLayout from '../../components/Layout/UniversalPageLayout';
 import CategoryBoostTrendsChart from '../../components/blocks/CategoryBoostTrendsChart';
 import CategoryTable from '../../components/blocks/CategoryTable';
 import TopBuzzPostsWidget from '../../components/blocks/TopBuzzPostsWidget';
-import FollowerBuzzSummary from '../../components/blocks/FollowerBuzzSummary';
+import FollowersWidget from '../../components/blocks/FollowersWidget';
+
 
 export default function CategoryPage() {
   const mainContent = (
@@ -23,7 +24,7 @@ export default function CategoryPage() {
         <TopBuzzPosts />
       </div>
       <div className="bg-slate-900 border border-slate-700 rounded-xl p-4">
-        <FollowerBuzzSummary />
+        <FollowersWidget />
       </div>
     </div>
   );
