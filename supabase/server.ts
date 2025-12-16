@@ -1,22 +1,15 @@
-// supabase/server.ts
+import { createClient } from '../../supabase/server'; // ✅ correct relative path
 
-import { createServerClient } from '@supabase/auth-helpers-nextjs';
-import { cookies as getCookies } from 'next/headers';
 
-export async function createClient() {
-  const cookieStore = await getCookies(); // ✅ now using await
+export async function computeUserCRV(userId: string) {
+  const supabase = await createClient(); // ✅ THIS IS THE FIX
 
-  return createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-    {
-      cookies: {
-        get: (key: string) => cookieStore.get(key)?.value,
-        set: () => {},
-        remove: () => {},
-      },
-    }
-  );
+  const { data, error } = await supabase.rpc('compute_user_crv', {
+    input_user_id: userId,
+  });
+
+  if (error) throw error;
+  return data;
 }
 
 
