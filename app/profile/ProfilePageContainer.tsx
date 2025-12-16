@@ -80,7 +80,7 @@ export default function ProfilePageContainer() {
 
   return <UniversalPageLayout
   mainContent={mainContent}
-  rightContent={sidebarContent} // ✅ Correct prop
+  rightContent={<Sidebar />} // Or your actual sidebar component
 />
 
 }
