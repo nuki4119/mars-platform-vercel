@@ -2,16 +2,17 @@
 
 import React from "react";
 import UniversalPageLayout from "../../components/Layout/UniversalPageLayout";
-import Sidebar from "../../components/Layout/Sidebar"; // <- don't forget this!
+import Sidebar from "../../components/Layout/Sidebar";
 
 /** 3. Boost Page */
 function BoostPageContainer() {
   return (
     <UniversalPageLayout
       mainContent={<div>💥 BoostPage — confirm + trigger boost</div>}
-      sidebarContent={<Sidebar />}
+      rightContent={<Sidebar />}  {/* ✅ FIXED */}
     />
   );
 }
 
 export default BoostPageContainer;
+
