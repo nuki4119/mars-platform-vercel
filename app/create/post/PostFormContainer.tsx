@@ -8,8 +8,9 @@ import PostForm from '../../../components/forms/PostForm';
 export default function PostFormContainer() {
   return (
     <UniversalPageLayout
-      mainContent={<PostForm />}
-      sidebarContent={null}
-    />
+  mainContent={<PostForm />}
+  rightContent={null}
+/>
+
   );
 }
