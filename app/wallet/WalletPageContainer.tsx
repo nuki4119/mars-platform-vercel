@@ -15,6 +15,7 @@ interface Transaction {
 
 export default function WalletPageContainer() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
+  const [wallet, setWallet] = useState<any>(null);
 
   useEffect(() => {
     // ✅ Mock data - Replace with Supabase call later
