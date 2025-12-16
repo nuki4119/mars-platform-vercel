@@ -2,7 +2,8 @@
 
 import React from 'react';
 import UniversalPageLayout from '../../../components/Layout/UniversalPageLayout';
-import PostForm from '@/components/forms/PostForm';
+import PostForm from '../../../components/forms/PostForm';
+
 
 export default function PostFormContainer() {
   return (
