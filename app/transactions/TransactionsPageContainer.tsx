@@ -64,5 +64,5 @@ export default function TransactionsPageContainer() {
     </div>
   );
 
-  return <UniversalPageLayout mainContent={mainContent} sidebarContent={null} />;
+  return <UniversalPageLayout mainContent={mainContent} rightContent={null} />;
 }

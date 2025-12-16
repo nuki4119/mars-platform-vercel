@@ -126,5 +126,5 @@ export default function PublicProfilePageContainer() {
     </div>
   );
 
-  return <UniversalPageLayout mainContent={mainContent} sidebarContent={sidebarContent} />;
+  return <UniversalPageLayout mainContent={mainContent} rightContent={sidebarContent} />;
 }
