@@ -3,7 +3,7 @@
 import UniversalPageLayout from '../../components/Layout/UniversalPageLayout';
 import CategoryBoostTrendsChart from '../../components/blocks/CategoryBoostTrendsChart';
 import CategoryTable from '../../components/blocks/CategoryTable';
-import TopBuzzPosts from '../../components/blocks/TopBuzzPosts';
+import TopBuzzPostsWidget from '../../components/blocks/TopBuzzPostsWidget';
 import FollowerBuzzSummary from '../../components/blocks/FollowerBuzzSummary';
 
 export default function CategoryPage() {

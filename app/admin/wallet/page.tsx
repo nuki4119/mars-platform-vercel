@@ -1,9 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useUser } from '../../hooks/useUser';
-import { supabase } from '../../supabase/client';
-import Topbar from '../../components/Layout/Topbar';
+import { useUser } from '../../../hooks/useUser';
+import { supabase } from '../../../supabase/client';
+import Topbar from '../../../components/Layout/Topbar';
 import Link from 'next/link';
 
 export default function WalletPage() {

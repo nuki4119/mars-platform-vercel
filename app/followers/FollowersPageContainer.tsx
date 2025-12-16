@@ -2,7 +2,7 @@
 // Page to show users who follow you and who you follow
 
 import React from 'react';
-import UniversalPageLayout from '../feed/UniversalPageLayout';
+import UniversalPageLayout from '../../components/Layout/UniversalPageLayout';
 
 const FollowerCard = ({ username, postCount }: { username: string; postCount: number }) => (
   <div className="bg-gray-800 rounded-xl p-4 flex justify-between items-center text-sm">
