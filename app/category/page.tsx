@@ -7,6 +7,8 @@ import TopBuzzPostsWidget from '../../components/blocks/TopBuzzPostsWidget';
 import FollowersWidget from '../../components/blocks/FollowersWidget';
 
 
+
+
 export default function CategoryPage() {
   const mainContent = (
     <div className="p-4 text-white">
