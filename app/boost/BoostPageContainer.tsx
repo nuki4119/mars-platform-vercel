@@ -9,10 +9,9 @@ function BoostPageContainer() {
   return (
     <UniversalPageLayout
       mainContent={<div>💥 BoostPage — confirm + trigger boost</div>}
-      rightContent={<Sidebar />}  {/* ✅ FIXED */}
+      rightContent={<Sidebar />}  // ✅ THIS IS CORRECT
     />
   );
 }
 
 export default BoostPageContainer;
-
