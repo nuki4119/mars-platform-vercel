@@ -126,9 +126,10 @@ export default function DashboardPageContainer() {
 
   return (
   <UniversalPageLayout
-    mainContent={mainContent}
-    sidebarContent={sidebarContent}
-  />
+  mainContent={mainContent}
+  rightContent={sidebarContent} // ✅ correct prop name
+/>
+
 );
 
 }
