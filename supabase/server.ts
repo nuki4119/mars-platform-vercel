@@ -1,16 +1,13 @@
 // supabase/server.ts
 
+import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
 import { cookies } from 'next/headers';
-import { createServerClient } from '@supabase/auth-helpers-nextjs';
+import { type Database } from './types/supabase'; // Optional: if you have typed DB schema
 
 export function createClient() {
-  return createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-    {
-      cookies: cookies(), // ✅ FIXED: call the function here
-    }
-  );
+  return createServerComponentClient<Database>({
+    cookies,
+  });
 }
 
 
