@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { supabase } from '@/supabase/client';
-import UniversalPageLayout from '@/components/Layout/UniversalPageLayout';
+import { supabase } from '../../supabase/client';
+import UniversalPageLayout from '../../components/Layout/UniversalPageLayout';
 
 interface Referral {
   id: string;
