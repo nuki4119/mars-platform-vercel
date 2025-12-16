@@ -1,18 +1,12 @@
-import { cookies } from 'next/headers';
-import { createServerClient } from '@supabase/auth-helpers-nextjs';
+import { createClient } from '../../supabase/server';
 
-export async function createClient() {
-  const cookieStore = await cookies(); // ✅ Now works because it's imported
+export async function computeUserCRV(userId: string): Promise<number> {
+  const supabase = await createClient(); // ✅ REQUIRED
 
-  return createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-    {
-      cookies: {
-        get: (key: string) => cookieStore.get(key)?.value,
-        set: () => {},
-        remove: () => {},
-      },
-    }
-  );
+  const { data, error } = await supabase.rpc('compute_user_crv', {
+    input_user_id: userId,
+  });
+
+  if (error) throw error;
+  return data;
 }
