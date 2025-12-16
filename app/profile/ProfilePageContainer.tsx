@@ -6,6 +6,7 @@ import { supabase } from '../../supabase/client';
 import BuzzPostCard from '../../components/blocks/BuzzPostCard';
 import UniversalPageLayout from '../../components/Layout/UniversalPageLayout';
 import Masonry from 'react-masonry-css';
+import Sidebar from '../../components/Layout/Sidebar';
 
 interface BuzzPost {
   id: string;
