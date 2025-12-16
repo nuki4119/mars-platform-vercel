@@ -21,15 +21,16 @@ export default function CategoryPage() {
   );
 
   const rightContent = (
-    <div className="space-y-4">
-      <div className="bg-slate-900 border border-slate-700 rounded-xl p-4">
-        <TopBuzzPosts />
-      </div>
-      <div className="bg-slate-900 border border-slate-700 rounded-xl p-4">
-        <FollowersWidget />
-      </div>
+  <div className="space-y-4">
+    <div className="bg-slate-900 border border-slate-700 rounded-xl p-4">
+      <TopBuzzPostsWidget />
     </div>
-  );
+    <div className="bg-slate-900 border border-slate-700 rounded-xl p-4">
+      <FollowersWidget />
+    </div>
+  </div>
+);
+
 
   return (
     <UniversalPageLayout
