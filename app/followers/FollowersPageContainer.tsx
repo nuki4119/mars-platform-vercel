@@ -44,7 +44,8 @@ export default function FollowersPageContainer() {
           <FollowerList title="You're Following" data={sampleFollowing} />
         </div>
       }
-      sidebarContent={null}
+      rightContent={null}
+
     />
   );
 }
