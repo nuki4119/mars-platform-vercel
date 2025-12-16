@@ -48,8 +48,6 @@ export default function WalletPageContainer() {
     <div className="p-4 space-y-8 text-white">
       <h1 className="text-2xl font-bold">Your Wallet</h1>
 
-      {/* Wallet Summary Widget */}
-      <WalletOverview />
 
       {/* Transfer Actions (Coming Soon) */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
