@@ -30,7 +30,10 @@ export default function PostPageContainer() {
   const router = useRouter();
   const params = useParams();
   const postId = params?.id as string;
+
   const [post, setPost] = useState<BuzzPost | null>(null);
+  const [wallet, setWallet] = useState<any>(null); // ✅ THIS WAS MISSING
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
   if (!postId) return;
