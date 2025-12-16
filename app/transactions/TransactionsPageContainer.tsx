@@ -1,7 +1,9 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import UniversalPageLayout from "@/components/Layout/UniversalPageLayout";
+import UniversalPageLayout from "../../components/Layout/UniversalPageLayout";
+
+
 
 interface Transaction {
   id: string;
