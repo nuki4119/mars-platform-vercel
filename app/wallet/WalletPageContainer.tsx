@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import UniversalPageLayout from '../../components/Layout/UniversalPageLayout';
-import WalletOverview from '../../components/blocks/WalletOverview';
+// import WalletOverview from '../../components/blocks/WalletOverview';
 import { Banknote, Upload, Download } from 'lucide-react';
 
 interface Transaction {
