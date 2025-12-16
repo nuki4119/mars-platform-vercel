@@ -78,5 +78,9 @@ export default function ProfilePageContainer() {
     </div>
   );
 
-  return <UniversalPageLayout mainContent={mainContent} />;
+  return <UniversalPageLayout
+  mainContent={mainContent}
+  rightContent={sidebarContent} // ✅ Correct prop
+/>
+
 }
