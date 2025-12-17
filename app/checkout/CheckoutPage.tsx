@@ -1,14 +1,14 @@
-// app/checkout/page.tsx
+// app/checkout/CheckoutPage.tsx
 "use client";
 
 import { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
-import { useRouter } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 
 export default function CheckoutPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const postId = searchParams.get("postId");
+
 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
